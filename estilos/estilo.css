@@ -124,14 +124,6 @@ main p{
     font-size: 1em; 
     /*1em = 16px*/
 }
-main p#p2:hover{/*ao passar o cursor no parágrafo 2*/
-    margin-left: 6px;
-    transition-duration: 0.5s;
-}
-main p#p4:hover{/*ao passar o cursor no parágrafo 4*/
-    margin-left: 6px;
-    transition-duration: 0.5s;
-}
 main strong{/*termos em negrito no main*/
     color: var(--cor4);
 }
@@ -144,7 +136,6 @@ main p a{/*links do main*/
     background-color: var(--cor0);
     border-radius: 3px;
     text-decoration: none;
-  
     color: var(--cor5);
 }
 main p a:hover{/*quando passar o cursor nos links do main*/

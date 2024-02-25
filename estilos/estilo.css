@@ -1,0 +1,311 @@
+@charset "UTF-8";
+
+/*>> Fonte baixada 'idroid' copiada na tag <style>*/
+/*>> Fonte 'Bebas Neue' importada na tag <head>*/
+
+/*pseudo-classe :root permite criar variáveis (com --, sem espaços) para armazenar itens de estilo que servirão pro restante do código*/
+:root{
+    --cor0: #c5ebd6;
+    --cor1:  #83e1ad;
+    --cor2: #3ddc84;
+    --cor3: #2fa866;
+    --cor4: #1a5c37;
+    --cor5: #063d1e;
+    /*código hexadecimal de cores começa com #*/ 
+    --fontepadrão: Arial, Verdana, Helvetica, sans-serif;
+    --fontedestaque: 'Bebas Neue', cursive;
+    --fonteandroid: 'idroid',cursive;
+}
+/*configurações globais da página*/
+*{
+    margin: 0px;
+    padding: 0px;
+    /*remover todas as margens e espaçamento interno de caixa da página*/
+}
+body{
+   background-color: var(--cor1);
+   /*selecionar item na variável: var(--nomedavariável)*/
+   font: normal 15px 'Arial', sans-serif;
+   text-align: justify;
+}
+/*títulos main*/
+main h1,h2{
+    margin-top: 15px;
+    padding-left: 5px ;
+    font: normal 15px 'idroid';
+}
+main h1:hover{
+    padding-left: 15px;
+    transition-duration: 0.5s;
+}
+main h2:hover{
+    padding-left: 15px;
+    transition-duration: 0.5s;
+}
+main h2{
+    background-image: linear-gradient(to right, var(--cor1), transparent)
+    /*vai criar um degradê até a cor ficar transparente*/
+}
+/*header*/
+header{
+    background-image: linear-gradient(to top, var(--cor4), var(--cor2));
+    min-height: 100px;
+    box-shadow: 0px 4px 6px #00000059;
+}
+header>h1{
+    font-family: var(--fontedestaque);
+    font-weight: normal;
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    margin: auto;
+    padding: 25px;
+    text-shadow: 2px 2px 2px #0000006e;
+}
+header>p{
+    font-family: var(--fontedestaque);
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    padding-bottom: 5px;
+    text-shadow: 2px 2px 2px #0000006e;
+}
+nav{
+    padding: 10px;
+    margin-left: 10px;
+    margin-top: 30px;
+    color: white;
+}
+nav>a{
+    color: white;
+    text-decoration: none;
+    line-height: 180% ;
+    font-weight: bold;
+}
+nav>a:hover{
+    text-decoration: underline;
+    background-color: var(--cor3);
+    box-shadow: 1px 1px 2px #0000006e;
+    border-radius: 2px;
+    padding: 5px;
+    transition-duration: 0.1s;
+}
+/*main*/
+main{
+    background-color: white;
+    margin:auto;
+    padding: 15px;
+    max-width: 800px;
+    min-width: 300px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 1px 1px 6px #00000073;
+}
+main{
+    background-color: white;
+}
+article>h1,h2{
+    text-align: left;
+    margin-left: 15px;
+    font-size: 20px;
+    text-shadow: 2px 2px 0px var(--cor1);
+    color: var(--cor4);
+}
+main p{
+    /*sem o > indica que o elemento está dentro mas não necessariamente é um child*/
+    margin: 10px 0px;
+    /*margin top e bottom: 10px;
+     margin right e left: 0px;
+    */
+    text-indent: 20px;
+    /*espaçamento na primeira linha*/
+    line-height: 1.8em;
+    /*altura de linhas*/
+    font-size: 1em; 
+    /*1em = 16px*/
+}
+main p#p2:hover{/*ao passar o cursor no parágrafo 2*/
+    margin-left: 6px;
+    transition-duration: 0.5s;
+}
+main p#p4:hover{/*ao passar o cursor no parágrafo 4*/
+    margin-left: 6px;
+    transition-duration: 0.5s;
+}
+main strong{/*termos em negrito no main*/
+    color: var(--cor4);
+}
+main strong:hover{
+    background-color: var(--cor0);
+    border-radius: 3px;
+    transition-duration: 0.5s;
+}
+main p a{/*links do main*/
+    background-color: var(--cor0);
+    border-radius: 3px;
+    text-decoration: none;
+  
+    color: var(--cor5);
+}
+main p a:hover{/*quando passar o cursor nos links do main*/
+    background-color: var(--cor4);
+    color: var(--cor0);
+    text-decoration: underline;
+    box-shadow: 1px 1px 0px #00000088;
+    border-radius: 3px;
+    transition-duration: 0.5s;
+}
+
+/*elementos main*/
+.parágrafo{
+    padding: 10px 20px;
+}
+
+.mídia{
+    /*imagens e video com class="mídia"*/
+
+    display: block;  /*display: block para aplicar o margin: auto nas imagens da págin*/
+    margin: auto; /*as imagens terão margem centralizada automática*/
+    max-width: 500px;
+    min-width: 100px;
+    width: 100%;
+}
+aside#caixa-video{
+    /*caixa video-android*/
+    background-color: var(--cor4);
+    margin: 0px -15px 30px -15px;
+    padding: 53px;
+    padding-bottom: 49%; /*aumentar espçamento vertical
+    inferior em 50%*/
+    position: relative; /*posição variável*/
+}
+aside#caixa-video> iframe{
+    /*video-android*/
+    position: absolute; /*posição fixa*/
+    top: 5%;
+    bottom: 5%;
+
+    left: 5%;
+    right: 5%;
+
+    width: 90%;
+    height: 90%;
+}
+#dan-droids{
+    max-width: 600px;
+    min-width: 100px;
+}
+#caixa-video{
+    max-width: 800px;
+}
+#video-android{
+    max-width: 500px;
+    min-width: 100px;
+}
+#bugdroid{
+    max-width: 300px;
+    min-width: 100px;
+}
+#irina-blok{
+    max-width: 800px;
+}
+
+/*quer aprender mais?*/
+aside#saiba-mais{
+    background-color: var(--cor2);
+    margin: 30px;
+    margin-top: 20px;
+    padding: 10px; 
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px 1px #0000005d;;
+}
+aside#saiba-mais ul{
+    list-style-type: '\2714\00A0\00A0';
+    /*troca o símbolo do marcador bolinha por ✔️ 
+    código U+2714 -> '\2714'
+    colocar espaçamento -> \00A0 (não compatível com todos os navegadores)
+    */
+    list-style-position: inside;
+    /*o marcador (bolinha) da lista fica dentro da caixa*/
+    columns: 1;
+    /*número de colunas da lista*/
+    padding: 20px;
+    margin: 30px;
+    line-height: 25px;
+
+    background-color: var(--cor0);
+    box-shadow: 0px 0px 5px #0000002f;
+    border-radius: 10px;
+}
+aside li:hover{
+    background-color: var(--cor4);
+    border-radius: 5px;
+    color: white;
+    margin: 2px 0px 0px 2px;
+    padding: 2px;
+    transition-duration: 0.3s;
+}
+aside>ul>a{
+    color: var(--cor5);
+    text-decoration: none;
+}
+aside > h3{/*quer aprender mais?*/
+    background-color: var(--cor4);
+    color: white;
+    padding: 5px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px;
+}
+aside h4{/*atualizações "doces"*/
+    text-align: center;
+    margin: 0px 20px 20px 20px;
+    background-color: var(--cor4);
+    border-radius: 40px;
+    color: white;
+}
+aside> p{/*curiosidades*/
+    background-color: var(--cor1);
+    border-radius: 20px 20px 20px 2px;
+    margin: 20px 30px;
+}
+aside> p:hover{
+    background-color: var(--cor0);
+    transition-duration: 0.5s;
+}
+aside#saiba-mais a{
+   background-color: var(--cor1);
+}
+aside#saiba-mais a:hover{
+    background-color: var(--cor4);
+}
+a#android-history:hover{
+    background-color: var(--cor4);
+}
+a.externo::after{
+    content: '\00A0\1F517';
+    /*colocar 🔗 depois de cada link externo
+    código U+1F517 -> \1F517
+    */
+}
+div#conclusões{
+    background-color: var(--cor0);
+    border-radius: 20px 20px 20px 1px;
+    box-shadow: 3px 3px 1px 0px #1a5c3791;
+    margin: 0px 30px;
+}
+/*footer*/
+footer{
+    background-color: var(--cor5);
+    color: white;
+    font-size: 0.9em;
+    padding: 3px;
+    text-align: center;
+    margin-top: 40px;
+}
+footer>p>a{
+    color: white;
+    text-decoration: none;
+}
+footer a:hover{
+    text-decoration: underline;
+}
